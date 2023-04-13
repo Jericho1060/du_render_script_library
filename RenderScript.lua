@@ -390,22 +390,22 @@ RenderScript = {
         --************************************************************************************************************
 
         --- Use a third party library in the renderscript
-        ---@param libraryName string The name of the library to use
+        ---@param libraryName string The name of the library to use, it will also be used as the variable name to access it in the renderScript
         use = function (self, libraryName)
             self._s = self._s .. 'local ' .. libraryName .. '=require("' .. libraryName .. '");'
         end,
 
-        --- Use the Atlas library in the renderscript
+        --- Use the Atlas library in the renderscript the variable name is to access it in the renderScript is "atlas"
         useAtlas = function (self)
             self._s = self._s .. 'local atlas=require("atlas");'
         end,
 
-        --- Use the JSON (dkjson) library in the renderscript
+        --- Use the JSON (dkjson) library in the renderscript the variable name is to access it in the renderScript is "json"
         useJSON = function (self)
             self._s = self._s .. 'local json=require("dkjson");'
         end,
 
-        --- Use the RSLib library in the renderscript
+        --- Use the RSLib library in the renderscript the variable name is to access it in the renderScript is "rslib"
         useRSLib = function (self)
             self._s = self._s .. 'local rslib=require("rslib");'
         end,
