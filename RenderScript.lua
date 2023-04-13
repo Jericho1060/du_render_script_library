@@ -385,6 +385,32 @@ RenderScript = {
             self._s = self._s .. line .. '\n'
         end,
 
+        
+        --************************************************************************************************************
+        -- Third party libraries support
+        --************************************************************************************************************
+
+        --- Use a third party library in the renderscript
+        ---@param libraryName string The name of the library to use
+        use = function (self, libraryName)
+            self._s = self._s .. 'local ' .. libraryName .. '=require("' .. libraryName .. '");'
+        end,
+
+        --- Use the Atlas library in the renderscript
+        useAtlas = function (self)
+            self._s = self._s .. 'local atlas=require("atlas");'
+        end,
+
+        --- Use the JSON (dkjson) library in the renderscript
+        useJSON = function (self)
+            self._s = self._s .. 'local json=require("dkjson");'
+        end,
+
+        --- Use the RSLib library in the renderscript
+        useRSLib = function (self)
+            self._s = self._s .. 'local rslib=require("rslib");'
+        end,
+
         --************************************************************************************************************
         -- utilities to add to the renderscript that are not by default in game
         --************************************************************************************************************

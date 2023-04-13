@@ -14,7 +14,7 @@ local MyFirstLayer = script:createLayer()
 script:addBox(MyFirstLayer,0,0,100,100)
 
 if not script:isTooLong() then
-    screen.setRenderScript(tostring(script))
+    script:sendToScreen(screen)
 else
     system.print("WARNING: Script too long!! Length is actualy " .. script:len() .. " / " .. script:getMaxSize())
 end
