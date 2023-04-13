@@ -384,7 +384,6 @@ RenderScript = {
         insertCodeLine = function(self, line)
             self._s = self._s .. line .. '\n'
         end,
-
         
         --************************************************************************************************************
         -- Third party libraries support
