@@ -41,3 +41,30 @@ local script = [[
 
 screen.setRenderScript(script)
 ```
+
+## Addition to the default render script
+
+This library add some functions to the default render script:
+
+### Third Party libraries support
+
+`use(libraryName)`: Use a third party library in the renderscript
+- `libraryName`: `string` The name of the library to use, it will also be used as the variable name to access it in the renderScript
+
+`useAtlas()`: Use the atlas library in the renderscript
+
+`useJSON()`: Use the JSON (dkjson) library in the renderscript
+
+`useRSLib()`: Use the RSLib library in the renderscript
+
+### RenderScript utilities functions
+
+`getMaxSize()`: Get the maximum size of the render script
+
+`isTooLong()`: Check if the render script is too long
+
+`sendToScreen(screen)`: Send the render script to a screen
+
+### Others
+
+`insertCodeLine(code)`: Insert a line of code in the render script
