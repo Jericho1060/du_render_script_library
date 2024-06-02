@@ -10,7 +10,9 @@ This project is currently in developpement and not finished yet.
 
 I'm currently looking for feedbacks and ideas to improve it and fix some limitations like how to render a function or loop or condition in the render script.
 
-Feel free to contact me on discord Jericho#1060 or on my guilded server : https://guilded.jericho.dev
+## Discord Server
+
+You can join me on Discord for help or suggestions or requests by following that link : https://discord.gg/qkdjyqDZQZ
 
 ## How to use it
 
